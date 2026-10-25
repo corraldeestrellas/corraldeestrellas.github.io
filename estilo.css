@@ -1,0 +1,139 @@
+:root {
+  --fondo: #fff8fc;
+  --texto: #3b2a4a;
+  --suave: #6d5a7d;
+  --rosa: #ff5fa2;
+  --morado: #8a5cf6;
+  --azul: #22b8f0;
+  --verde: #4cc96b;
+  --amarillo: #ffc21a;
+  --tarjeta: #ffffff;
+  --borde: #f1def0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: "Fredoka", "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(120deg, #ff8cc6, #a98bff 60%, #6fd0ff);
+  padding: 28px 16px 24px;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  font-size: clamp(30px, 7vw, 52px);
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 4px 0 rgba(80, 20, 90, 0.25);
+}
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+nav a[aria-current="page"] {
+  background: #fff;
+  color: var(--morado);
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 16px 48px;
+}
+
+h1 {
+  font-size: clamp(28px, 5vw, 38px);
+  line-height: 1.2;
+  margin: 0 0 8px;
+  color: var(--morado);
+}
+
+h2 {
+  font-size: 23px;
+  margin: 32px 0 6px;
+  color: var(--rosa);
+}
+
+p,
+li {
+  color: var(--texto);
+}
+
+.actualizado {
+  color: var(--suave);
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.tarjeta {
+  background: var(--tarjeta);
+  border: 2px solid var(--borde);
+  border-radius: 24px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.personajes {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.lista-personajes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.lista-personajes li {
+  background: var(--tarjeta);
+  border: 2px solid var(--borde);
+  border-radius: 16px;
+  padding: 10px 14px;
+}
+
+a {
+  color: var(--morado);
+}
+
+footer {
+  text-align: center;
+  color: var(--suave);
+  font-size: 15px;
+  padding: 24px 16px 36px;
+  border-top: 2px solid var(--borde);
+}
+
+footer a {
+  margin: 0 6px;
+}
